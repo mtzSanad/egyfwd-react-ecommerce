@@ -1,5 +1,6 @@
 import React from 'react';
 import Header from './component/Header';
+import Main from './component/Main';
 import Menu from './component/Menu';
 
 const App = () => {
@@ -11,7 +12,9 @@ const App = () => {
         <div className="col-span-2">
           <Menu />
         </div>
-        <div className="col-span-1">Main</div>
+        <div className="col-span-10">
+          <Main />
+        </div>
       </div>
     </div>
   );
