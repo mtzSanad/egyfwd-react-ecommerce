@@ -6,7 +6,7 @@ import Menu from './component/Menu';
 const App = () => {
   //Adding the basic component layout
   return (
-    <div className="bg-slate-800 h-screen">
+    <div className="bg-slate-800 h-full">
       <Header title="e-Commerce" />
       <div className="container mx-auto grid grid-cols-12 gap-1">
         <div className="col-span-2">
