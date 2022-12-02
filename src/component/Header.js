@@ -6,7 +6,11 @@ const Header = (props) => {
   const { title } = props;
 
   //Using JSX to get variables values
-  return <div>{title}</div>;
+  return (
+    <div className="px-6 py-3 bg-gray-900 text-purple-500 text-2xl font-extrabold">
+      {title}
+    </div>
+  );
 };
 
 export default Header;
