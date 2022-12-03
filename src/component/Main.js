@@ -2,8 +2,9 @@ import React from 'react';
 import Item from './Item';
 import ItemCategory from './ItemCategory';
 
-const Main = () => {
-  const itemsCategory = ['T-shirts', 'Dress', 'Jeans', 'Shoes'];
+const Main = ({ items }) => {
+  const itemsCategory = [];
+  Object.keys(items).map((k) => itemsCategory.push(k));
   return (
     <div className="w-full">
       {
@@ -19,9 +20,16 @@ const Main = () => {
             customeCls="flex gap-4"
             className=""
           >
-            <Item price={50} desc="T-shirt1" />
-            <Item price={100} desc="T-shirt1" />
-            <Item price={30} desc="T-shirt1" />
+            {items[e].map((i) => (
+              <Item
+                key={i.desc}
+                price={i.price}
+                desc={i.desc}
+                colors={i.colors}
+                img={i.img}
+                discount={i.discount}
+              />
+            ))}
           </ItemCategory>
         ))
       }

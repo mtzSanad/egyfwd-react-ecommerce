@@ -2,9 +2,11 @@ import React from 'react';
 import Header from './component/Header';
 import Main from './component/Main';
 import Menu from './component/Menu';
+import { Items } from './data/Items';
 
 const App = () => {
   //Adding the basic component layout
+
   return (
     <div className="bg-slate-800 h-full">
       <Header title="e-Commerce" />
@@ -13,7 +15,7 @@ const App = () => {
           <Menu />
         </div>
         <div className="col-span-10">
-          <Main />
+          <Main items={Items} />
         </div>
       </div>
     </div>
