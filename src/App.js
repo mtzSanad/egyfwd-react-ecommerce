@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import Header from './component/Header';
+import Main from './component/Main';
+import Menu from './component/Menu';
+import { Items } from './data/Items';
 
-function App() {
+const App = () => {
+  //Adding the basic component layout
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="bg-slate-800 h-full">
+      <Header title="e-Commerce" />
+      <div className="container mx-auto grid grid-cols-12 gap-1">
+        <div className="col-span-2">
+          <Menu />
+        </div>
+        <div className="col-span-10">
+          <Main items={Items} />
+        </div>
+      </div>
     </div>
   );
-}
+};
 
 export default App;
