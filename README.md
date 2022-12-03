@@ -53,6 +53,8 @@ Check out [wc3School](https://www.w3schools.com/jsref/met_node_appendchild.asp)
 
 ## Code snippets
 
+This code snippets are from [OldRepo](https://github.com/mtzSanad/udacity-react-session1) check the comments they highlight important concepts.
+
 App.js
 
 ```js
