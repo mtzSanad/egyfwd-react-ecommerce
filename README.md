@@ -131,7 +131,6 @@ const ShoppingItem = (props) => {
   //Clicking this function will log and modify the itemStock but UI will not be affected! Why?
   //Because React dosn't know that we have changed the variable and we didn't told react to re-render!
   //Solution - we must rely on component states where react can listen to changes and update UI accordinally
-  //Check session-1-5- branch
   const buyItem = (event) => {
     if (itemStock > 0) {
       itemStock = itemStock - 1;
